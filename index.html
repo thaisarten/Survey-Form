@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Avaliação de Qualidade dos Serviços</h1>
+    <p id="description">Muito obrigada por disponibilizar seu tempo para nos ajudar a melhorar nossos serviços! Responda
+        as perguntas abaixo e confira a surpresa que temos para você ao final!
+    </p>
+
+    <form action="" id="survey-form">
+        <fieldset id="dados">
+            <legend>Seus dados:</legend>
+            <label for="name" id="name-label">
+                Qual seu nome?
+                <input type="text" id="name" required placeholder="Digite seu nome completo">
+            </label>
+            <label for="email" id="email-label">
+                Qual seu melhor e-mail?
+                <input type="email" name="email" id="email" required pattern="[a-z0-5]{8,}" placeholder="meu@email.com">
+            </label>
+            <label for="number" id="number-label">
+                Qual sua idade?
+                <input type="number" name="" id="number" min="10" max="100" placeholder="22"> <span>anos</span>
+            </label>
+        </fieldset>
+        <fieldset id="experiencia">
+            <legend>Sua experiência:</legend>
+            <div id="servicos">
+                <p>Qual(is) tipo(s) de serviço(s) você contratou em nosso estabelecimento? Marque todas as alternativas
+                    cabíveis:</p>
+                <input type="checkbox" name="consultoria" id="gestante" value="gestante"><label
+                    for="gestante">Consultoria de Gestante</label>
+                <input type="checkbox" name="consultoria" id="pos-parto" value="pos-parto"> <label
+                    for="pos-parto">Consultoria Pós-Parto</label>
+                <input type="checkbox" name="consultoria" id="sono" value="sono"> <label for="sono">Consultoria de
+                    Sono</label>
+                <input type="checkbox" name="consultoria" id="VT" value="VT"><label for="VT">Consultoria de Volta ao
+                    Trabalho</label>
+                <input type="checkbox" name="consultoria" id="desmame" value="desmame"> <label for="desmame">Consultoria
+                    de Desmame</label>
+            </div>
+            <label for="dropdown">Qual foi a profissional que realizou o atendimento?
+                <select name="prestador" id="dropdown">
+                    <option value="">Selecione um prestador</option>
+                    <option value="1">Renata Silva</option>
+                    <option value="2">Thaís Arten</option>
+                </select>
+            </label>
+            
+
+
+        </fieldset>
+        <input type="submit" value="Envie">
+    </form>
+</body>
+
+</html>
