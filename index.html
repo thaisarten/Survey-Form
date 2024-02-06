@@ -9,11 +9,13 @@
 </head>
 
 <body>
-    <h1 id="title">Avaliação de Qualidade dos Serviços</h1>
-    <p id="description">Muito obrigada por disponibilizar seu tempo para nos ajudar a melhorar nossos serviços! Responda
-        as perguntas abaixo e confira a surpresa que temos para você ao final!
-    </p>
-
+    <header class="header">
+        <h1 id="title" class="text-center">Avaliação de Qualidade dos Serviços</h1>
+        <p id="description" class="text-center">Muito obrigada por disponibilizar seu tempo para nos ajudar a melhorar nossos serviços!
+            Responda
+            as perguntas abaixo e confira a surpresa que temos para você ao final!
+        </p>
+    </header>
     <form action="" id="survey-form">
         <fieldset id="dados">
             <legend>Seus dados:</legend>
@@ -53,9 +55,20 @@
                     <option value="2">Thaís Arten</option>
                 </select>
             </label>
-            
-
-
+            <p>Dê uma nota para o seu atendimento:</p>
+            <div>
+                <input type="radio" name="nota-atendimento" id="0" value="0"><label for="0">0</label>
+                <input type="radio" name="nota-atendimento" id="1" value="1"><label for="1">1</label>
+                <input type="radio" name="nota-atendimento" id="2" value="2"><label for="2">2</label>
+                <input type="radio" name="nota-atendimento" id="3" value="3"><label for="3">3</label>
+                <input type="radio" name="nota-atendimento" id="4" value="4"><label for="4">4</label>
+                <input type="radio" name="nota-atendimento" id="5" value="5"><label for="5">5</label>
+            </div>
+        </fieldset>
+        <fieldset id="percepcao">
+            <legend>Suas percepções:</legend>
+            <label for="opiniao">Registre aqui as suas impressões, sugestões e críticas sobre nossos serviços:</label>
+            <textarea name="opiniao" id="opiniao" cols="50" rows="10" maxlength="2000"></textarea>
         </fieldset>
         <input type="submit" value="Envie">
     </form>
