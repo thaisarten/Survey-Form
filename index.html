@@ -9,69 +9,83 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 id="title" class="text-center">Avaliação de Qualidade dos Serviços</h1>
-        <p id="description" class="text-center">Muito obrigada por disponibilizar seu tempo para nos ajudar a melhorar nossos serviços!
-            Responda
-            as perguntas abaixo e confira a surpresa que temos para você ao final!
-        </p>
-    </header>
-    <form action="" id="survey-form">
-        <fieldset id="dados">
-            <legend>Seus dados:</legend>
-            <label for="name" id="name-label">
-                Qual seu nome?
-                <input type="text" id="name" required placeholder="Digite seu nome completo">
-            </label>
-            <label for="email" id="email-label">
-                Qual seu melhor e-mail?
-                <input type="email" name="email" id="email" required pattern="[a-z0-5]{8,}" placeholder="meu@email.com">
-            </label>
-            <label for="number" id="number-label">
-                Qual sua idade?
-                <input type="number" name="" id="number" min="10" max="100" placeholder="22"> <span>anos</span>
-            </label>
-        </fieldset>
-        <fieldset id="experiencia">
-            <legend>Sua experiência:</legend>
-            <div id="servicos">
-                <p>Qual(is) tipo(s) de serviço(s) você contratou em nosso estabelecimento? Marque todas as alternativas
-                    cabíveis:</p>
-                <input type="checkbox" name="consultoria" id="gestante" value="gestante"><label
-                    for="gestante">Consultoria de Gestante</label>
-                <input type="checkbox" name="consultoria" id="pos-parto" value="pos-parto"> <label
-                    for="pos-parto">Consultoria Pós-Parto</label>
-                <input type="checkbox" name="consultoria" id="sono" value="sono"> <label for="sono">Consultoria de
-                    Sono</label>
-                <input type="checkbox" name="consultoria" id="VT" value="VT"><label for="VT">Consultoria de Volta ao
-                    Trabalho</label>
-                <input type="checkbox" name="consultoria" id="desmame" value="desmame"> <label for="desmame">Consultoria
-                    de Desmame</label>
-            </div>
-            <label for="dropdown">Qual foi a profissional que realizou o atendimento?
-                <select name="prestador" id="dropdown">
-                    <option value="">Selecione um prestador</option>
-                    <option value="1">Renata Silva</option>
-                    <option value="2">Thaís Arten</option>
-                </select>
-            </label>
-            <p>Dê uma nota para o seu atendimento:</p>
-            <div>
-                <input type="radio" name="nota-atendimento" id="0" value="0"><label for="0">0</label>
-                <input type="radio" name="nota-atendimento" id="1" value="1"><label for="1">1</label>
-                <input type="radio" name="nota-atendimento" id="2" value="2"><label for="2">2</label>
-                <input type="radio" name="nota-atendimento" id="3" value="3"><label for="3">3</label>
-                <input type="radio" name="nota-atendimento" id="4" value="4"><label for="4">4</label>
-                <input type="radio" name="nota-atendimento" id="5" value="5"><label for="5">5</label>
-            </div>
-        </fieldset>
-        <fieldset id="percepcao">
-            <legend>Suas percepções:</legend>
-            <label for="opiniao">Registre aqui as suas impressões, sugestões e críticas sobre nossos serviços:</label>
-            <textarea name="opiniao" id="opiniao" cols="50" rows="10" maxlength="2000"></textarea>
-        </fieldset>
-        <input type="submit" value="Envie">
-    </form>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Avaliação de Qualidade dos Serviços</h1>
+            <p id="description" class="text-center">Muito obrigada por disponibilizar seu tempo para nos ajudar a
+                melhorar nossos serviços!
+                Responda
+                as perguntas abaixo e confira a surpresa que temos para você ao final!
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <fieldset id="dados">
+                <legend>Seus dados:</legend>
+                <label for="name" id="name-label">
+                    Qual seu nome?
+                    <input type="text" id="name" required placeholder="Digite seu nome completo" class="resposta-curta">
+                </label>
+                <label for="email" id="email-label">
+                    Qual seu melhor e-mail?
+                    <input type="email" name="email" id="email" required pattern="[a-z0-5]{8,}"
+                        placeholder="meu@email.com" class="resposta-curta">
+                </label>
+                <label for="number" id="number-label">
+                    Qual sua idade?
+                    <span><input type="number" name="" id="number" min="10" max="100" placeholder="22"
+                            class="resposta-curta">anos</span>
+                </label>
+            </fieldset>
+            <fieldset id="experiencia">
+                <legend>Sua experiência:</legend>
+                <div id="servicos">
+                    <p>Qual(is) tipo(s) de serviço(s) você contratou em nosso estabelecimento? Marque todas as
+                        alternativas
+                        cabíveis:</p>
+                    <label for="gestante">
+                        <input type="checkbox" name="consultoria" id="gestante" value="gestante">Consultoria de Gestante
+                    </label>
+                    <label for="pos-parto">
+                        <input type="checkbox" name="consultoria" id="pos-parto" value="pos-parto"> Consultoria
+                        Pós-Parto
+                    </label>
+                    <label for="sono">
+                        <input type="checkbox" name="consultoria" id="sono" value="sono"> Consultoria de Sono
+                    </label>
+                    <label for="VT">
+                        <input type="checkbox" name="consultoria" id="VT" value="VT">Consultoria de Volta ao Trabalho
+                    </label>
+                    <label for="desmame">
+                        <input type="checkbox" name="consultoria" id="desmame" value="desmame"> Consultoria
+                        de Desmame
+                    </label>
+                </div>
+                <label for="dropdown">Qual foi a profissional que realizou o atendimento?
+                    <select name="prestador" id="dropdown">
+                        <option value="">Selecione um prestador</option>
+                        <option value="1">Renata Silva</option>
+                        <option value="2">Thaís Arten</option>
+                    </select>
+                </label>
+                <p>Dê uma nota para o seu atendimento:</p>
+                <div>
+                    <input type="radio" name="nota-atendimento" id="0" value="0"><label for="0">0</label>
+                    <input type="radio" name="nota-atendimento" id="1" value="1"><label for="1">1</label>
+                    <input type="radio" name="nota-atendimento" id="2" value="2"><label for="2">2</label>
+                    <input type="radio" name="nota-atendimento" id="3" value="3"><label for="3">3</label>
+                    <input type="radio" name="nota-atendimento" id="4" value="4"><label for="4">4</label>
+                    <input type="radio" name="nota-atendimento" id="5" value="5"><label for="5">5</label>
+                </div>
+            </fieldset>
+            <fieldset id="percepcao">
+                <legend>Suas percepções:</legend>
+                <label for="opiniao">Registre aqui as suas impressões, sugestões e críticas sobre nossos
+                    serviços:</label>
+                <textarea name="opiniao" id="opiniao" cols="50" rows="10" maxlength="2000"></textarea>
+            </fieldset>
+            <input type="submit" value="Envie">
+        </form>
+    </div>
 </body>
 
 </html>
